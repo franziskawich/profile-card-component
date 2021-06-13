@@ -1,0 +1,171 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 version
+*/
+
+:root {
+  --cyan: hsl(185, 75%, 39%);
+  --blue: hsl(229, 23%, 23%);
+  --greyish-blue: hsl(227, 10%, 46%);
+  --grey: hsl(0, 0%, 59%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--cyan);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card {
+  background-color: white;
+  min-width: 35rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card__bg-top {
+  background-image: url(../images/bg-pattern-card.svg);
+  min-height: 15rem;
+  display: block;
+}
+.card__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 1.8;
+  -webkit-transform: translateY(-5.3rem);
+  -ms-transform: translateY(-5.3rem);
+  transform: translateY(-5.3rem);
+  margin-bottom: -3rem;
+}
+.card__person-image {
+  border-radius: 50%;
+  border: 0.5rem solid white;
+  margin-bottom: 1.5rem;
+}
+.card__person-name {
+  font-size: 1.8rem;
+}
+.card__person-age {
+  color: var(--greyish-blue);
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+.card__person-location {
+  color: var(--greyish-blue);
+  font-size: 1.5rem;
+}
+.card__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2.5rem;
+  border-top: 0.1rem solid #e6e6e6;
+}
+.card__stats-item {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  line-height: 1.5;
+}
+.card__stats-number {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.card__stats-description {
+  color: var(--grey);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.attribution {
+  position: absolute;
+  top: 90%;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.attribution__link {
+  color: #3e52a3;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 0.3rem solid transparent;
+}
+.attribution__link:hover {
+  color: white;
+  border-bottom: 0.3rem solid #3e52a3;
+}
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
