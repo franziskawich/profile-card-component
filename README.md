@@ -41,33 +41,28 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to include two background images at once and how to position both of the images with the help of the background-position property.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+body {
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
+I realized that it is a little bit easier to use hsl color values instead of rgba when needing a darker or lighter version of a current color.
+
+Although I did not use it in the challenge, I found out about the shorthand property place-items (align-items, justify-items).
+
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I had some problems with centering the user image. I ended up using flexbox and transform, but I'm not sure if this is the best solution. I used vh and vw units several times and it worked fine, but I think I should use them more often to know when it is right to use them. I read somewhere that they are more associated with typography.
 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS-Tricks: Using multiple backgrounds](https://css-tricks.com/css-basics-using-multiple-backgrounds/) - This helped me with including two background images.
 
 
 ## Author
