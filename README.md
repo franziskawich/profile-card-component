@@ -38,6 +38,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - SCSS (saved as CSS)
 - Flexbox
+- BEM methodology
 
 ### What I learned
 
